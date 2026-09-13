@@ -6,7 +6,7 @@ import {
   SpecialtyChips,
   Where,
 } from '@/components/directory/badges';
-import { ExternalIcon } from '@/components/ui/external-link';
+import { ExternalLink } from '@/components/ui/external-link';
 import { listedProfiles, profileById } from '@/lib/directory/read';
 import { SITE_URL } from '@/lib/site';
 import type { Metadata } from 'next';
@@ -118,14 +118,12 @@ export default async function ProfilePage({ params }: PageProps<'/directory/[pro
 
         <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-sm">
           <li>
-            <a
+            <ExternalLink
               href={profile.contact.url}
-              rel="noopener noreferrer"
               className="text-link hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
             >
               {profile.contact.label}
-              <ExternalIcon />
-            </a>
+            </ExternalLink>
           </li>
           {/* Filtered rather than skipped inside the map, which returned
               `undefined` for a dropped link and left a hole in the array.
@@ -136,14 +134,12 @@ export default async function ProfilePage({ params }: PageProps<'/directory/[pro
             .filter((link) => link.url !== profile.contact.url)
             .map((link) => (
               <li key={`${link.label} ${link.url}`}>
-                <a
+                <ExternalLink
                   href={link.url}
-                  rel="noopener noreferrer"
                   className="text-link hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
                 >
                   {link.label}
-                  <ExternalIcon />
-                </a>
+                </ExternalLink>
               </li>
             ))}
         </ul>
