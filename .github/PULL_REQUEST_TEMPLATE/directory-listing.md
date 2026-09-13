@@ -48,8 +48,8 @@ nothing in the JSON refers to it: the filename is what connects it to your
 listing. Without one, your listing shows your initials, which is a perfectly
 good listing.
 
-- **100KB, maximum.** Roughly 256x256 saved as `.webp`. The site has a hard
-  deployment size limit and every listing shares it
+- **512x512px and 100KB, maximum.** Roughly 256x256 saved as `.webp` is plenty.
+  The site has a hard deployment size limit and every listing shares it
 - **No SVG.** It can carry script and would be served from this site's own
   origin. Export it to `.png`
 - Convert rather than rename: the contents are checked against the extension
@@ -65,8 +65,8 @@ good listing.
       you would carry for years
 - [ ] `contact.url` goes to a page you control and can change or take down
 - [ ] You are offering real Titanium work, and the summary describes it honestly
-- [ ] Any picture is `.png`, `.jpg` or `.webp`, at most 100KB, and named after
-      your slug
+- [ ] Any picture is `.png`, `.jpg` or `.webp`, at most 512x512px and 100KB, and
+      named after your slug
 - [ ] `pnpm check:registry` passes locally, or CI will run it for you
 
 ## Anything the reviewer should know

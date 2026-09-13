@@ -102,10 +102,11 @@ What is enforced, in `src/lib/directory/avatar.ts` and checked by
 - **No SVG.** It is a document that can carry script and pull in remote
   resources, and it would be served from this site's own origin. There is no
   version of an avatar that needs to be a program.
-- **100KB per file.** A deployment budget rather than a matter of taste: the
-  size limit is measured against the whole static output, which the directory
-  shares with the compiled documentation, so the headroom for pictures is
-  measured in single-digit megabytes.
+- **512x512px and 100KB per file, at most.** Roughly 256x256 saved as `.webp`
+  is plenty. The byte cap is a deployment budget rather than a matter of taste:
+  the size limit is measured against the whole static output, which the
+  directory shares with the compiled documentation, so the headroom for pictures
+  is measured in single-digit megabytes.
 - One picture per listing, and no orphans. A picture whose listing is gone fails
   the build rather than staying served at a URL nothing links to.
 

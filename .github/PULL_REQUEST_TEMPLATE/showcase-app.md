@@ -55,8 +55,8 @@ Commit it beside your JSON as `registry/showcase/<your-slug>.png` (or `.jpg`, or
 `.webp`). Nothing in the JSON refers to it: the filename is what connects it to
 your entry.
 
-- **100KB, maximum.** Roughly 256x256 saved as `.webp`. The site has a hard
-  deployment size limit and every entry shares it
+- **512x512px and 100KB, maximum.** Roughly 256x256 saved as `.webp` is plenty.
+  The site has a hard deployment size limit and every entry shares it
 - **No SVG.** It can carry script and would be served from this site's own
   origin. Export it to `.png`
 - Convert rather than rename: the contents are checked against the extension
@@ -74,8 +74,8 @@ your entry.
 - [ ] You have the right to publish the icon
 - [ ] **No email address anywhere**, including inside a URL. The schema rejects
       `mailto:`, `tel:` and anything shaped like an address in any text field
-- [ ] The icon is `.png`, `.jpg` or `.webp`, at most 100KB, and named after your
-      slug
+- [ ] The icon is `.png`, `.jpg` or `.webp`, at most 512x512px and 100KB, and
+      named after your slug
 - [ ] `pnpm check:registry` passes locally, or CI will run it for you
 
 ## Anything the reviewer should know

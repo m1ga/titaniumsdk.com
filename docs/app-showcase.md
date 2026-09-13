@@ -100,8 +100,9 @@ What is enforced, and checked by `pnpm check:registry`:
   says. A renamed file is refused rather than published.
 - **No SVG.** It is a document that can carry script and pull in remote
   resources, and it would be served from this site's own origin.
-- **100KB per file.** Roughly 256x256 saved as `.webp`. A deployment budget
-  rather than a matter of taste - see below.
+- **512x512px and 100KB per file, at most.** Roughly 256x256 saved as `.webp`
+  is plenty - it is never drawn larger than 80px. The byte cap is a deployment
+  budget rather than a matter of taste - see below.
 - One icon per entry, no orphans, and **no entry without one**. All three fail
   the build rather than rendering a gap.
 
