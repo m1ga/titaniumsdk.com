@@ -1,6 +1,6 @@
 import { JsonLd } from '@/components/seo/json-ld';
 import { Icon, PlaceholderBadge, PlatformChips } from '@/components/showcase/badges';
-import { ExternalIcon } from '@/components/ui/external-link';
+import { ExternalLink } from '@/components/ui/external-link';
 import { softwareApplication } from '@/lib/seo';
 import { storeLinks } from '@/lib/showcase/app';
 import { appById, listedApps } from '@/lib/showcase/read';
@@ -88,14 +88,12 @@ export default async function AppPage({ params }: PageProps<'/showcase/[appId]'>
           <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
             {links.map((link) => (
               <li key={link.key}>
-                <a
+                <ExternalLink
                   href={link.url}
-                  rel="noopener noreferrer"
                   className="text-link hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
                 >
                   {link.label}
-                  <ExternalIcon />
-                </a>
+                </ExternalLink>
               </li>
             ))}
           </ul>

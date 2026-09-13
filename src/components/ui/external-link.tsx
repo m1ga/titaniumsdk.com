@@ -50,6 +50,11 @@ export function ExternalIcon() {
  * tab replaces the instructions they are following, and the way back is a
  * button they have to think to press.
  *
+ * The same reasoning covers a showcase or directory entry's own links. Those
+ * pages exist to hand a reader somebody else's address - a store listing, a
+ * contact page - and the reader is browsing a directory, not leaving for good.
+ * Keeping the entry open is what lets them come back for the next one.
+ *
  * The visually-hidden note is not optional politeness. Taking over the back
  * button without warning is the substance of WCAG 3.2.5, and a sighted reader
  * gets that warning from the icon. `rel="noreferrer"` also covers `noopener`,
