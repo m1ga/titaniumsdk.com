@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "climberino",
+  "name": "Climberino",
+  "subtitle": "The climbing and bouldering community app",
+  "platforms": ["iphone", "ipad", "android-phone", "android-tablet"],
+  "sdkVersion": "13.4.1",
+  "description": "Climberino is the community app for climbers and boulderers. Discover climbing and bouldering gyms, find new places to climb, and connect with fellow climbers. Check in at gyms, collect points, track your climbing progress, rate and review halls, and compete with friends. You can also find climbing partners, discover events, manage your gym tickets, and keep a personal route log. With a growing database of climbing and bouldering halls across Europe, Climberino makes it easy to discover new gyms, meet people, and keep your climbing journey organized—all in one app.",
+  "website": "https://climberino.de/",
+  "appStore": "https://itunes.apple.com/app/climberino/id1200568837?mt=8",
+  "playStore": "https://play.google.com/store/apps/details?id=com.miga.climberino",
+  "placeholder": false
+}
