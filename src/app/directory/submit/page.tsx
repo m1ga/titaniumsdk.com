@@ -82,8 +82,8 @@ export default function GetListedPage() {
         </li>
         <li>No GitHub account? One is forked for you on the way in.</li>
         <li>
-          A photo or logo is optional ({IMAGE_EXTENSIONS.join(', ')}, at most 100KB), committed
-          beside the JSON and named the same. Without one you get initials.
+          A photo or logo is optional ({IMAGE_EXTENSIONS.join(', ')}, at most 512x512px and 100KB),
+          committed beside the JSON and named the same. Without one you get initials.
         </li>
         <li>
           No email address anywhere - not in <code className="font-mono text-xs">contact.url</code>,

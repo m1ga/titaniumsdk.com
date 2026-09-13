@@ -84,8 +84,9 @@ export default function SubmitAppPage() {
         </li>
         <li>No GitHub account? One is forked for you on the way in.</li>
         <li>
-          Commit an icon beside it, named the same ({IMAGE_EXTENSIONS.join(', ')}, at most 100KB).
-          Every entry needs one - there is no fallback the way the directory has initials.
+          Commit an icon beside it, named the same ({IMAGE_EXTENSIONS.join(', ')}, at most 512x512px
+          and 100KB). Every entry needs one - there is no fallback the way the directory has
+          initials.
         </li>
         <li>
           <code className="font-mono text-xs">subtitle</code> may be deleted, and so may any one of
